@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Kolonial Billig",
+  "description": "Find the cheapest product among the list of all the products in kolonial.no based on per kg price",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://kolonial.no/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "browser_action": {},
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/"
+  ]
+}
