@@ -35,9 +35,6 @@ function highlightElement(e, i) {
   if (!e) {
     return
   }
-  e.innerText = `[${i + 1}] ${e.innerText}`
-  // e.style.backgroundColor = "#8EC5FC"
-  e.style.backgroundImage = "radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% )"
-  e.style.borderRadius = "500px"
-  e.style.color = "#000000"
+  e.classList.add("ext-oda-highlight");
+  e.innerHTML = `<strong>[${i+1}]</strong> ${e.innerText}`
 }

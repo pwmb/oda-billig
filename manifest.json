@@ -1,15 +1,19 @@
 {
   "manifest_version": 2,
-  "name": "Kolonial Billig",
-  "description": "Find the cheapest product among the list of all the products in kolonial.no based on per kg price",
+  "name": "Oda Billig",
+  "description": "Find the cheapest product among the list of all the products in oda.com based on per kg price",
   "version": "0.0.1",
   "content_scripts": [
     {
       "matches": [
-        "https://kolonial.no/*"
+        "https://kolonial.no/*",
+        "https://oda.com/*"
       ],
       "js": [
         "content.js"
+      ],
+      "css": [
+        "content.css"
       ]
     }
   ],
