@@ -14,7 +14,7 @@ unitPrices
 
 function getPriceFor(e) {
   const unitPrice = e.innerText
-  const perKgOrLOrPiece = unitPrice.match(/kr ([0-9,]*) per (kg|l|piece|stk|m)/);
+  const perKgOrLOrPiece = unitPrice.match(/kr ([0-9,]*) per (kg|l|piece|stk|m)/);
   if (!perKgOrLOrPiece) {
     // something different --> send to backend server to improve
     // console.log(unitPrice, document.location)
